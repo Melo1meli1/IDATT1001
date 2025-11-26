@@ -1,0 +1,32 @@
+Øving 5 Klasser som byggeklosser
+
+Oppgave 1
+Lag en klasse for å regne med brøk.
+
+Klassen skal ha to konstruktører:
+• Den ene konstruktøren tar teller og nevner som argument. Hvis nevneren er 0, skal et
+unntaksobjekt av typen IllegalArgumentException kastes.
+• Den andre konstruktøren tar kun telleren som argument. Da skal nevneren settes lik 1.
+Klassen skal ha get-metoder, men ikke set-metoder.
+Klassen skal ha metoder for å summere, subtrahere, multiplisere og dividere en brøk (this)
+med en annen brøk (parameter til metoden). Metodene har ikke returverdi, men etter at
+operasjonen er utført, ligger resultatet i this.
+Du kan se bort fra at resultatet av operasjonen bør forkortes.
+Lag testklient som del av klassen.
+Ekstraoppgave: Sørg for å forkorte brøkene.
+
+Oppgave 2
+I oppgave 4 i kapittel 5 brukte du klassen java.util.Random. Metoden nextInt() er laget slikt at
+den gir et heltall i intervallet fra og med 0 og opp til den tallverdien du sender inn som
+argument. Klassen tilbyr også en metode nextDouble() som gir deg et desimaltall uniformt
+fordelt i intervallet (0,0, 1,0>15. Denne metoden tar ingen argumenter.
+
+Lag en klasse MinRandom som tilbyr følgende metoder:
+public int nesteHeltall(int nedre, int ovre) // intervallet (nedre, ovre)
+public double nesteDesimaltall(double nedre, double ovre) // intervallet >nedre, ovre>
+15. Denne notasjonen betyr at 0,0 er med, mens 1,0 ikke er med.
+Klassen skal ha et objekt av klassen java.util.Random som objektvariabel. Metodene foran
+skal implementeres ved at man bruker dette objektet til å generere neste tilfeldige tall.
+Resultatet skal så transformeres til det ønskede intervallet.
+Prøv klassen ved å lage mange tilfeldige tall av begge typer og forsikre deg om at de ligger i
+de oppgitte intervallene.
