@@ -1,0 +1,35 @@
+//todo fullfør senere
+
+Øving 10 - Tabellister
+Oppgave 1
+Kommunens turistkontor trenger et program for å vedlikeholde et register over
+arrangementer som kan være av interesse for turister og andre. For hvert arrangement
+lagrer vi et entydig nummer, navn, sted, arrangør, type (konsert, barneteater, foredrag osv)
+og tidspunkt (dato og klokkeslett). Lagre tidspunktene som heltall, eksempel: 200210301800
+(kl 18 den 30.oktober 2002) slik at du ved å sammenligne tallene kan finne ut om et
+arrangement er før eller etter et annet.
+Du trenger klassene Arrangement og ArrangementRegister. Den siste klassen skal tilby
+følgende operasjoner:
+• Å registrere et nytt arrangement
+• Å finne alle arrangementer på et gitt sted
+• Å finne alle arrangementer på en gitt dato
+• Å finne alle arrangementer innenfor et tidsintervall gitt ved to datoer. Listen skal
+være sortert på tid.
+• Å lage lister over alle arrangementer, sortert etter henholdsvis sted, type og
+tidspunkt.
+(Du trenger ikke legge inn kontroll på at et gitt tidspunkt er gyldig)
+Lag et menystyrt klientprogram.
+Oppgave 2
+Lag et register over menyer for en restaurantkjede. En meny består av flere retter. Hver rett
+kan inngå i flere menyer. Hver rett har navn type (forrett, hovedrett, dessert osv) og pris.
+Oppskriften ligger lagret som en streng for hver rett. Du kan anta at navnet identifiserer
+retten entydig.
+Klassen MenyRegister skal tilby følgende operasjoner:
+• Å registrere en ny rett.
+• Å finne en rett, gitt navnet.
+• Å finne alle retter av en gitt type.
+• Å registrere en ny meny som består av ett sett med retter.
+• Å finne alle menyer med totalpris innenfor et gitt intervall.
+Finn selv ut hvilke operasjoner klassene Meny og Rett bør tilby for at menyregisteret på
+enklest mulig måte skal kunne utføre sine oppgaver.
+Tegn UML-diagram. Programmer klassene, og lag en enkel testklient.
