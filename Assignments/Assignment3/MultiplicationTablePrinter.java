@@ -12,6 +12,12 @@ public class MultiplicationTablePrinter {
         System.out.print("Enter end number: ");
         int end = input.nextInt();
 
+        if (start > end) {
+            int newStart = start;
+            start = end;
+            end = newStart;
+        }
+
         for (int tableNumber = start; tableNumber <= end; tableNumber++) {
             System.out.println("Table" + tableNumber);
 
@@ -23,3 +29,5 @@ public class MultiplicationTablePrinter {
         input.close();
     }
 }
+
+
